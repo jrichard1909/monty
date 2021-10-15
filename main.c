@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 	while (getline(&(var.line), &len, var.file_p) != -1)
 	{
 		var.n_line++;
-		var.tokens = tokenizer(var.line, " \t\n");
+		var.tokens = tokenizer(var.line, " \n\t");
 		if (var.tokens[0] == NULL)
 		{
 			free(var.tokens);

@@ -1,5 +1,6 @@
 #include "monty.h"
 #include <string.h>
+
 /**
  *_tokenizer_line - item separating function
  *@buffer: string to separate
@@ -9,7 +10,7 @@
 char **tokenizer(char *buffer, char *delimiter)
 {
 	char **token = NULL;
-	int i = 0;
+	int i = 0, j = 0;
 
 	if (buffer == NULL)
 		return (NULL);
@@ -20,6 +21,11 @@ char **tokenizer(char *buffer, char *delimiter)
 		fprintf(stderr, "Error: malloc failed");
 		exit(EXIT_FAILURE);
 	}
+
+	while (buffer[j] == ' ' && buffer != NULL)
+		buffer++;
+
+
 	while ((token[i] = strtok(buffer, delimiter)) != NULL && i < 9)
 	{
 		i++;

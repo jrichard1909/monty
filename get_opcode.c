@@ -37,7 +37,7 @@ void (*get_op_func(vars_t var))(stack_t **head, unsigned int line_number)
 	}
 	while (opcodes[i].opcode != NULL)
 	{
-		if (strcmp(var.line, opcodes[i].opcode) == 0)
+		if (strcmp(var.tokens[0], opcodes[i].opcode) == 0)
 		{
 			return (*(opcodes[i]).f);
 		}
