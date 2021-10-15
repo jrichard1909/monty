@@ -31,7 +31,7 @@ void func_mod(stack_t **head, unsigned int line_number)
 }
 
 /**
- * _op_pchar - prints the char at the top of the stack,
+ * func_pchar - prints the char at the top of the stack,
  * followed by a new line.
  * @head: head (stack) to the stack
  * @line_number: line number where opcode is located

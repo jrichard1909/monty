@@ -3,7 +3,7 @@
 /**
  * get_op_func - function searches for a match between opcode and text
  * and returns the corresponding function
- * @token: struct containing line contents and line number
+ * @var: vars
  *
  * Return: pointer to the matching function
  */

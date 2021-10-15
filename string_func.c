@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- *_tokenizer_line - item separating function
+ *tokenizer - item separating function
  *@buffer: string to separate
   *@delimiter: separator
  *Return: pointer to buffer
