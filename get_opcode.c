@@ -10,7 +10,7 @@
 
 void (*get_op_func(vars_t var))(stack_t **head, unsigned int line_number)
 {
-	int i;
+	int i = 0;
 
 	instruction_t opcodes[] = {
 		{"push", func_push},
